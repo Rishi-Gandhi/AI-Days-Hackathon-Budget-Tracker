@@ -20,7 +20,7 @@ def init_file():
 def add_income():
     category = input("Enter income category (e.g., Job, Gift): ")
     amount = float(input("Enter income amount: "))
-    date = input("Enter date (YYYY-MM-DD): ")
+    date = input("Enter date (MM-DD-YYYY): ")
 
     with open(DATA_FILE, mode="a", newline="") as file:
         writer = csv.writer(file)
@@ -32,7 +32,7 @@ def add_expense():
     global budget_limit
     category = input("Enter expense category (e.g., Food, Rent): ")
     amount = float(input("Enter expense amount: "))
-    date = input("Enter date (YYYY-MM-DD): ")
+    date = input("Enter date (MM-DD-YYYY): ")
 
     with open(DATA_FILE, mode="a", newline="") as file:
         writer = csv.writer(file)
